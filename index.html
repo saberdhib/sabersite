@@ -1,605 +1,582 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2818
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
-{\colortbl;\red255\green255\blue255;\red70\green137\blue204;\red23\green23\blue23;\red140\green211\blue254;
-\red202\green202\blue202;\red109\green109\blue109;\red194\green126\blue101;\red212\green212\blue212;\red167\green197\blue152;
-\red79\green123\blue61;}
-{\*\expandedcolortbl;;\cssrgb\c33725\c61176\c83922;\cssrgb\c11765\c11765\c11765;\cssrgb\c61176\c86275\c99608;
-\cssrgb\c83137\c83137\c83137;\cssrgb\c50196\c50196\c50196;\cssrgb\c80784\c56863\c47059;\cssrgb\c86275\c86275\c86275;\cssrgb\c70980\c80784\c65882;
-\cssrgb\c37647\c54510\c30588;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\partightenfactor0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saber Dhib – Just chill Guy in Data</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #1e3a8a 0%, #2563eb 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .dashboard-card {
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .dashboard-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #1e3a8a;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .construction-banner {
+            background-color: #FFEDD5;
+            color: #9A3412;
+            font-weight: 500;
+        }
+        
+        .gallery-item {
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.02);
+        }
+        
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Construction Banner -->
+    <div class="construction-banner py-2 px-4 text-center text-sm">
+        🚧 This website is under construction – more coming soon!
+    </div>
 
-\f0\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 <!DOCTYPE\cf4 \strokec4  html\cf2 \strokec2 >\cf5 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf6 \cb3 \strokec6 <\cf2 \strokec2 html\cf5 \strokec5  \cf4 \strokec4 lang\cf6 \strokec6 =\cf7 \strokec7 "en"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cf6 \cb3 \strokec6 <\cf2 \strokec2 head\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf5 \cb3     \cf6 \strokec6 <\cf2 \strokec2 meta\cf5 \strokec5  \cf4 \strokec4 charset\cf6 \strokec6 =\cf7 \strokec7 "UTF-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 meta\cf5 \strokec5  \cf4 \strokec4 name\cf6 \strokec6 =\cf7 \strokec7 "viewport"\cf5 \strokec5  \cf4 \strokec4 content\cf6 \strokec6 =\cf7 \strokec7 "width=device-width, initial-scale=1.0"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 title\cf6 \strokec6 >\cf5 \strokec5 Saber Dhib \'96 Just chill Guy in Data\cf6 \strokec6 </\cf2 \strokec2 title\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 script\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://cdn.tailwindcss.com"\cf6 \strokec6 ></\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 link\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "stylesheet"\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 link\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "stylesheet"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 style\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf2 \strokec2 body\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 font-family:\cf5 \strokec5  \cf7 \strokec7 'Inter'\cf8 \strokec8 ,\cf5 \strokec5  \cf7 \strokec7 sans-serif\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 scroll-behavior:\cf5 \strokec5  \cf7 \strokec7 smooth\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3         \cb1 \
-\cb3         \cf2 \strokec2 .gradient-text\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 background:\cf5 \strokec5  \cf7 \strokec7 linear-gradient(\cf9 \strokec9 90deg\cf8 \strokec8 ,\cf5 \strokec5  #1e3a8a \cf9 \strokec9 0%\cf8 \strokec8 ,\cf5 \strokec5  #2563eb \cf9 \strokec9 100%\cf7 \strokec7 )\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 -webkit-background-clip:\cf5 \strokec5  \cf7 \strokec7 text\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 background-clip:\cf5 \strokec5  \cf7 \strokec7 text\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 color:\cf5 \strokec5  \cf7 \strokec7 transparent\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3         \cb1 \
-\cb3         \cf2 \strokec2 .dashboard-card\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 border-radius:\cf5 \strokec5  \cf9 \strokec9 12px\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 transition:\cf5 \strokec5  \cf7 \strokec7 all\cf5 \strokec5  \cf9 \strokec9 0.3s\cf5 \strokec5  \cf7 \strokec7 ease\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 box-shadow:\cf5 \strokec5  \cf9 \strokec9 0\cf5 \strokec5  \cf9 \strokec9 4px\cf5 \strokec5  \cf9 \strokec9 6px\cf5 \strokec5  \cf7 \strokec7 rgba(\cf9 \strokec9 0\cf8 \strokec8 ,\cf5 \strokec5  \cf9 \strokec9 0\cf8 \strokec8 ,\cf5 \strokec5  \cf9 \strokec9 0\cf8 \strokec8 ,\cf5 \strokec5  \cf9 \strokec9 0.05\cf7 \strokec7 )\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3         \cb1 \
-\cb3         \cf2 \strokec2 .dashboard-card:hover\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 translateY(\cf9 \strokec9 -5px\cf7 \strokec7 )\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 box-shadow:\cf5 \strokec5  \cf9 \strokec9 0\cf5 \strokec5  \cf9 \strokec9 10px\cf5 \strokec5  \cf9 \strokec9 25px\cf5 \strokec5  \cf7 \strokec7 rgba(\cf9 \strokec9 0\cf8 \strokec8 ,\cf5 \strokec5  \cf9 \strokec9 0\cf8 \strokec8 ,\cf5 \strokec5  \cf9 \strokec9 0\cf8 \strokec8 ,\cf5 \strokec5  \cf9 \strokec9 0.1\cf7 \strokec7 )\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3         \cb1 \
-\cb3         \cf2 \strokec2 .nav-link\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 position:\cf5 \strokec5  \cf7 \strokec7 relative\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3         \cb1 \
-\cb3         \cf2 \strokec2 .nav-link::after\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 content:\cf5 \strokec5  \cf7 \strokec7 ''\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 position:\cf5 \strokec5  \cf7 \strokec7 absolute\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 width:\cf5 \strokec5  \cf9 \strokec9 0\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 height:\cf5 \strokec5  \cf9 \strokec9 2px\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 bottom:\cf5 \strokec5  \cf9 \strokec9 -2px\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 left:\cf5 \strokec5  \cf9 \strokec9 0\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 background-color:\cf5 \strokec5  #1e3a8a\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 transition:\cf5 \strokec5  \cf7 \strokec7 width\cf5 \strokec5  \cf9 \strokec9 0.3s\cf5 \strokec5  \cf7 \strokec7 ease\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3         \cb1 \
-\cb3         \cf2 \strokec2 .nav-link:hover::after\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 width:\cf5 \strokec5  \cf9 \strokec9 100%\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3         \cb1 \
-\cb3         \cf2 \strokec2 .construction-banner\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 background-color:\cf5 \strokec5  #FFEDD5\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 color:\cf5 \strokec5  #9A3412\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 font-weight:\cf5 \strokec5  \cf9 \strokec9 500\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3         \cb1 \
-\cb3         \cf2 \strokec2 .gallery-item\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 transition:\cf5 \strokec5  \cf7 \strokec7 all\cf5 \strokec5  \cf9 \strokec9 0.3s\cf5 \strokec5  \cf7 \strokec7 ease\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3         \cb1 \
-\cb3         \cf2 \strokec2 .gallery-item:hover\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 scale(\cf9 \strokec9 1.02\cf7 \strokec7 )\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3         \cb1 \
-\cb3         \cf2 \strokec2 .sticky-nav\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 position:\cf5 \strokec5  \cf7 \strokec7 sticky\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 top:\cf5 \strokec5  \cf9 \strokec9 0\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 z-index:\cf5 \strokec5  \cf9 \strokec9 50\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 backdrop-filter:\cf5 \strokec5  \cf7 \strokec7 blur(\cf9 \strokec9 10px\cf7 \strokec7 )\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3             \cf4 \strokec4 background-color:\cf5 \strokec5  \cf7 \strokec7 rgba(\cf9 \strokec9 255\cf8 \strokec8 ,\cf5 \strokec5  \cf9 \strokec9 255\cf8 \strokec8 ,\cf5 \strokec5  \cf9 \strokec9 255\cf8 \strokec8 ,\cf5 \strokec5  \cf9 \strokec9 0.9\cf7 \strokec7 )\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3         \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 style\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf6 \cb3 \strokec6 </\cf2 \strokec2 head\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cf6 \cb3 \strokec6 <\cf2 \strokec2 body\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white text-gray-800"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf5 \cb3     \cf10 \strokec10 <!-- Construction Banner -->\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "construction-banner py-2 px-4 text-center text-sm"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \uc0\u55357 \u56999  This website is under construction \'96 more coming soon!\cb1 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3     \cf10 \strokec10 <!-- Navigation -->\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 nav\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "sticky-nav shadow-sm border-b border-gray-100"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex justify-between h-16"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://via.placeholder.com/40/1e3a8a/FFFFFF?text=SD"\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "Logo"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "h-8 w-8 rounded-full mr-2"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl font-semibold text-gray-900"\cf6 \strokec6 >\cf5 \strokec5 Saber Dhib\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "hidden md:flex items-center space-x-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#home"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "nav-link text-gray-700 hover:text-blue-900"\cf6 \strokec6 >\cf5 \strokec5 Home\cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#about"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "nav-link text-gray-700 hover:text-blue-900"\cf6 \strokec6 >\cf5 \strokec5 About\cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#documentation"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "nav-link text-gray-700 hover:text-blue-900"\cf6 \strokec6 >\cf5 \strokec5 Documentation\cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#sharing"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "nav-link text-gray-700 hover:text-blue-900"\cf6 \strokec6 >\cf5 \strokec5 Sharing\cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#contact"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "nav-link text-gray-700 hover:text-blue-900"\cf6 \strokec6 >\cf5 \strokec5 Contact\cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "md:hidden flex items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 button\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "menu-btn"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-bars text-xl"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 button\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cb1 \
-\cb3         \cf10 \strokec10 <!-- Mobile menu -->\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "mobile-menu"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "hidden md:hidden bg-white border-t"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "px-2 pt-2 pb-3 space-y-1 sm:px-3"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#home"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-900 hover:bg-gray-50"\cf6 \strokec6 >\cf5 \strokec5 Home\cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#about"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-900 hover:bg-gray-50"\cf6 \strokec6 >\cf5 \strokec5 About\cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#documentation"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-900 hover:bg-gray-50"\cf6 \strokec6 >\cf5 \strokec5 Documentation\cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#sharing"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-900 hover:bg-gray-50"\cf6 \strokec6 >\cf5 \strokec5 Sharing\cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#contact"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-900 hover:bg-gray-50"\cf6 \strokec6 >\cf5 \strokec5 Contact\cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 nav\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3     \cf10 \strokec10 <!-- Hero Section -->\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 header\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "home"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white py-24"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex flex-col md:flex-row items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "md:w-1/2 mb-12 md:mb-0"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h1\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-4xl md:text-5xl font-bold text-gray-900 mb-4"\cf6 \strokec6 >\cf5 \strokec5 Saber Dhib\cf6 \strokec6 </\cf2 \strokec2 h1\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl md:text-3xl font-semibold gradient-text mb-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         From math to meaning \'96 data with a purpose.\cb1 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl text-gray-600 mb-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         I apply math, data and AI to turn ideas into concrete, value-driven strategies.\cb1 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#contact"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-900 hover:bg-blue-800 transition duration-300"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             Contact Me\cb1 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-arrow-right ml-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "md:w-1/2 flex justify-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-64 h-64 rounded-full bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg overflow-hidden border-4 border-white gallery-item"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf10 \strokec10 <!-- Profile image -->\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=400&q=80"\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "Saber Dhib"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-full object-cover"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 header\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3     \cf10 \strokec10 <!-- About Section -->\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "about"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "py-20 bg-gray-50"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center mb-16"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-3xl font-bold text-gray-900"\cf6 \strokec6 >\cf5 \strokec5 About Me\cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-20 h-1 bg-blue-900 mx-auto mt-4"\cf6 \strokec6 ></\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cb1 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex flex-col md:flex-row items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "md:w-1/2 mb-10 md:mb-0"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-lg text-gray-700 mb-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         Data project engineer with a dual background in applied mathematics and economics. My international experience spans Tunisia and the MENA region, interested on  retail, luxury, fashion, sport, health, tech and supply chain sectors.\cb1 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-lg text-gray-700 mb-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         I specialize in applying data science and business analyst  to create tangible business value, whether through automation, predictive analytics, or strategic insights.\cb1 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-lg text-gray-700 mb-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         Fluent in French, English, and Arabic, I bridge technical expertise with cross-cultural communication to deliver impactful solutions.\cb1 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cb1 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-8 grid grid-cols-2 md:grid-cols-3 gap-4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-brain text-blue-900 mr-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700"\cf6 \strokec6 >\cf5 \strokec5 AI Engineering\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-shopping-bag text-blue-900 mr-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700"\cf6 \strokec6 >\cf5 \strokec5 Retail  \cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-gem text-blue-900 mr-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700"\cf6 \strokec6 >\cf5 \strokec5 Luxury\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-tshirt text-blue-900 mr-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700"\cf6 \strokec6 >\cf5 \strokec5 Learning\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-boxes text-blue-900 mr-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700"\cf6 \strokec6 >\cf5 \strokec5 Supply Chain\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-language text-blue-900 mr-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700"\cf6 \strokec6 >\cf5 \strokec5 Conseil \cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "md:w-1/2 md:pl-12 flex justify-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=600&q=80"\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "Teamwork"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "rounded-xl shadow-lg gallery-item max-h-96"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf6 \cb3 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "tools"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "py-20 bg-gray-50"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf5 \cb3   \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "max-w-7xl mx-auto px-4 text-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-3xl font-extrabold text-gray-900 mb-4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3       \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "inline-block bg-gradient-to-r from-blue-900 to-blue-500 text-transparent bg-clip-text"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         Tech Stack & Tools\cb1 \
-\cb3       \cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-lg text-gray-600 mb-12"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3       Tools I use to build, automate, deploy, and analyze data & AI solutions.\cb1 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3     \cf10 \strokec10 <!-- Dev & Data Tools -->\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mb-10"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3       \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl font-semibold text-blue-800 mb-4"\cf6 \strokec6 >\cf5 \strokec5 Dev & Data Engineering\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3       \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex flex-wrap justify-center gap-4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "tool-badge"\cf6 \strokec6 ><\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-python mr-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \strokec5 Python\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "tool-badge"\cf6 \strokec6 ><\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-database mr-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \strokec5 BigQuery\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "tool-badge"\cf6 \strokec6 ><\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-server mr-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \strokec5 SQL Server\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "tool-badge"\cf6 \strokec6 ><\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-terminal mr-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \strokec5 Terminal\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "tool-badge"\cf6 \strokec6 ><\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-code mr-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \strokec5 Notebook\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "tool-badge"\cf6 \strokec6 ><\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-cloud mr-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \strokec5 GCP\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "tool-badge"\cf6 \strokec6 ><\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-chart-line mr-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \strokec5 Power BI\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3       \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3     \cf10 \strokec10 <!-- Automation Tools -->\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mb-10"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3       \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl font-semibold text-blue-800 mb-4"\cf6 \strokec6 >\cf5 \strokec5 Automation & No-Code\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3       \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex flex-wrap justify-center gap-4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "tool-badge"\cf6 \strokec6 ><\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-bolt mr-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \strokec5 Make\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "tool-badge"\cf6 \strokec6 ><\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-plug mr-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \strokec5 Zapier\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "tool-badge"\cf6 \strokec6 ><\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-cogs mr-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \strokec5 n8n\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3       \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3     \cf10 \strokec10 <!-- Productivity / Misc -->\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mb-10"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3       \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl font-semibold text-blue-800 mb-4"\cf6 \strokec6 >\cf5 \strokec5 Productivity & Analysis\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3       \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex flex-wrap justify-center gap-4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "tool-badge"\cf6 \strokec6 ><\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-file-excel mr-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \strokec5 Excel\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "tool-badge"\cf6 \strokec6 ><\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-table mr-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \strokec5 Google Sheets\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "tool-badge"\cf6 \strokec6 ><\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-chart-bar mr-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \strokec5 RStudio\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "tool-badge"\cf6 \strokec6 ><\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-robot mr-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \strokec5 Mistral\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "tool-badge"\cf6 \strokec6 ><\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-comment-dots mr-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \strokec5 ChatGPT\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3       \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3   \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3   \cf10 \strokec10 <!-- Custom style for tags -->\cf5 \cb1 \strokec5 \
-\cb3   \cf6 \strokec6 <\cf2 \strokec2 style\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf2 \strokec2 .tool-badge\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3       \cf4 \strokec4 display:\cf5 \strokec5  \cf7 \strokec7 inline-flex\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3       \cf4 \strokec4 align-items:\cf5 \strokec5  \cf7 \strokec7 center\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3       \cf4 \strokec4 background-color:\cf5 \strokec5  #e0e7ff\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3       \cf4 \strokec4 color:\cf5 \strokec5  #1e3a8a\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3       \cf4 \strokec4 font-weight:\cf5 \strokec5  \cf9 \strokec9 500\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3       \cf4 \strokec4 padding:\cf5 \strokec5  \cf9 \strokec9 0.5rem\cf5 \strokec5  \cf9 \strokec9 1rem\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3       \cf4 \strokec4 border-radius:\cf5 \strokec5  \cf9 \strokec9 9999px\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3       \cf4 \strokec4 transition:\cf5 \strokec5  \cf7 \strokec7 transform\cf5 \strokec5  \cf9 \strokec9 0.2s\cf5 \strokec5  \cf7 \strokec7 ease\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3     \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3     \cf2 \strokec2 .tool-badge:hover\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3       \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 scale(\cf9 \strokec9 1.05\cf7 \strokec7 )\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3       \cf4 \strokec4 box-shadow:\cf5 \strokec5  \cf9 \strokec9 0\cf5 \strokec5  \cf9 \strokec9 2px\cf5 \strokec5  \cf9 \strokec9 8px\cf5 \strokec5  \cf7 \strokec7 rgba(\cf9 \strokec9 30\cf8 \strokec8 ,\cf5 \strokec5  \cf9 \strokec9 58\cf8 \strokec8 ,\cf5 \strokec5  \cf9 \strokec9 138\cf8 \strokec8 ,\cf5 \strokec5  \cf9 \strokec9 0.2\cf7 \strokec7 )\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
-\cb3     \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3   \cf6 \strokec6 </\cf2 \strokec2 style\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf6 \cb3 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\
-\pard\pardeftab720\partightenfactor0
-\cf5 \cb3     \cf10 \strokec10 <!-- Documentation Section -->\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "documentation"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "py-20 bg-white"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center mb-16"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-3xl font-bold text-gray-900"\cf6 \strokec6 >\cf5 \strokec5 Documentation\cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-20 h-1 bg-blue-900 mx-auto mt-4"\cf6 \strokec6 ></\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl text-gray-600 max-w-3xl mx-auto mt-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     Selected projects applying data science and AI to real-world challenges\cb1 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cb1 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "grid md:grid-cols-3 gap-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf10 \strokec10 <!-- Project 1 -->\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "dashboard-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "h-48 bg-gradient-to-r from-blue-900 to-blue-600 flex items-center justify-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-calendar-check text-white text-6xl"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "p-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl font-semibold text-gray-900 mb-2"\cf6 \strokec6 >\cf5 \strokec5 GL Events\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-600 mb-4"\cf6 \strokec6 >\cf5 \strokec5 Data Cloud & Dashboards\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700 mb-4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             Developed comprehensive data solutions and interactive dashboards to enhance event experience and operational efficiency.\cb1 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex flex-wrap gap-2"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full"\cf6 \strokec6 >\cf5 \strokec5 Data Cloud\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full"\cf6 \strokec6 >\cf5 \strokec5 Dashboarding\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full"\cf6 \strokec6 >\cf5 \strokec5 Event Tech\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cb1 \
-\cb3                 \cf10 \strokec10 <!-- Project 2 -->\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "dashboard-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "h-48 bg-gradient-to-r from-blue-900 to-blue-600 flex items-center justify-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-store text-white text-6xl"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "p-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl font-semibold text-gray-900 mb-2"\cf6 \strokec6 >\cf5 \strokec5 Baraka Cobra\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-600 mb-4"\cf6 \strokec6 >\cf5 \strokec5 Retail\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700 mb-4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             Built and scaled a local grocery store from the ground up. Hands-on experience managing inventory, pricing, suppliers, and daily operations \'96 a true school of real-world business.\cb1 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex flex-wrap gap-2"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                         \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full"\cf6 \strokec6 >\cf5 \strokec5 Retail Ops\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full"\cf6 \strokec6 >\cf5 \strokec5 Inventory\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full"\cf6 \strokec6 >\cf5 \strokec5 Strategy\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cb1 \
-\cb3                 \cf10 \strokec10 <!-- Project 3 -->\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "dashboard-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "h-48 bg-gradient-to-r from-blue-900 to-blue-600 flex items-center justify-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-industry text-white text-6xl"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "p-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl font-semibold text-gray-900 mb-2"\cf6 \strokec6 >\cf5 \strokec5 Textile Tech\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-600 mb-4"\cf6 \strokec6 >\cf5 \strokec5 Fashion & Data\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700 mb-4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                               Created a fashion-focused data business concept. Used market analysis and business modeling to explore how AI and data could optimize design, supply chain, and demand forecasting in the textile industry.\cb1 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex flex-wrap gap-2"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full"\cf6 \strokec6 >\cf5 \strokec5 Business analysis\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full"\cf6 \strokec6 >\cf5 \strokec5 Fashion \cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full"\cf6 \strokec6 >\cf5 \strokec5 Supply Chain\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3     \cf10 \strokec10 <!-- Sharing Knowledge Section -->\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "sharing"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "py-20 bg-gray-50"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center mb-16"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-3xl font-bold text-gray-900"\cf6 \strokec6 >\cf5 \strokec5 Sharing Knowledge\cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-20 h-1 bg-blue-900 mx-auto mt-4"\cf6 \strokec6 ></\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl text-gray-600 max-w-3xl mx-auto mt-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     I regularly share thoughts on AI, business, and data applied to fashion, retail and luxury. Not to show off \'96 just for the pleasure of learning out loud.\cb1 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cb1 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "grid md:grid-cols-2 gap-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "dashboard-card bg-white rounded-xl p-8 text-center border border-gray-100"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-newspaper text-5xl text-blue-900 mb-6"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-semibold text-gray-900 mb-4"\cf6 \strokec6 >\cf5 \strokec5 Articles\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-600 mb-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         Insights on AI applications in retail, luxury, and supply chain management.\cb1 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-gray-100 rounded-lg p-4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-500 italic"\cf6 \strokec6 >\cf5 \strokec5 Coming soon - currently in development\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cb1 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "dashboard-card bg-white rounded-xl p-8 text-center border border-gray-100"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-chalkboard-teacher text-5xl text-blue-900 mb-6"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-2xl font-semibold text-gray-900 mb-4"\cf6 \strokec6 >\cf5 \strokec5 Presentations\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-600 mb-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         Talks and workshops on data-driven decision making in various industries.\cb1 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-gray-100 rounded-lg p-4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-500 italic"\cf6 \strokec6 >\cf5 \strokec5 Coming soon - currently in development\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3     \cf10 \strokec10 <!-- Gallery Section -->\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "py-20 bg-white"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center mb-16"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-3xl font-bold text-gray-900"\cf6 \strokec6 >\cf5 \strokec5 Gallery\cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-20 h-1 bg-blue-900 mx-auto mt-4"\cf6 \strokec6 ></\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl text-gray-600 max-w-3xl mx-auto mt-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     Moments from professional journey and collaborations\cb1 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cb1 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "grid md:grid-cols-3 gap-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "gallery-item rounded-xl overflow-hidden shadow-lg"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=400&q=80"\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "Portrait"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-64 object-cover"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white p-4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700 text-center"\cf6 \strokec6 >\cf5 \strokec5 Professional Headshot\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cb1 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "gallery-item rounded-xl overflow-hidden shadow-lg"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=400&q=80"\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "Team"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-64 object-cover"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white p-4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700 text-center"\cf6 \strokec6 >\cf5 \strokec5 Team Collaboration\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cb1 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "gallery-item rounded-xl overflow-hidden shadow-lg"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=400&q=80"\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "Work"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-64 object-cover"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white p-4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700 text-center"\cf6 \strokec6 >\cf5 \strokec5 In Action\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cb1 \
-\
-\cb3     \cf10 \strokec10 <!-- Contact Section -->\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "contact"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "py-20 bg-gray-50"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center mb-16"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-3xl font-bold text-gray-900"\cf6 \strokec6 >\cf5 \strokec5 Contact\cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-20 h-1 bg-blue-900 mx-auto mt-4"\cf6 \strokec6 ></\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl text-gray-600 max-w-3xl mx-auto mt-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     Interested in collaboration or just want to chat? Don't hesitate to reach out.\cb1 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cb1 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex flex-col md:flex-row gap-12"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "md:w-1/2"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 form\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "space-y-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 label\cf5 \strokec5  \cf4 \strokec4 for\cf6 \strokec6 =\cf7 \strokec7 "name"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block text-sm font-medium text-gray-700 mb-1"\cf6 \strokec6 >\cf5 \strokec5 Name\cf6 \strokec6 </\cf2 \strokec2 label\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 input\cf5 \strokec5  \cf4 \strokec4 type\cf6 \strokec6 =\cf7 \strokec7 "text"\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "name"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-900 focus:border-blue-900"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 label\cf5 \strokec5  \cf4 \strokec4 for\cf6 \strokec6 =\cf7 \strokec7 "email"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block text-sm font-medium text-gray-700 mb-1"\cf6 \strokec6 >\cf5 \strokec5 Email\cf6 \strokec6 </\cf2 \strokec2 label\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 input\cf5 \strokec5  \cf4 \strokec4 type\cf6 \strokec6 =\cf7 \strokec7 "email"\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "email"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-900 focus:border-blue-900"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 label\cf5 \strokec5  \cf4 \strokec4 for\cf6 \strokec6 =\cf7 \strokec7 "message"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "block text-sm font-medium text-gray-700 mb-1"\cf6 \strokec6 >\cf5 \strokec5 Message\cf6 \strokec6 </\cf2 \strokec2 label\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 textarea\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "message"\cf5 \strokec5  \cf4 \strokec4 rows\cf6 \strokec6 =\cf7 \strokec7 "4"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-900 focus:border-blue-900"\cf6 \strokec6 ></\cf2 \strokec2 textarea\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 button\cf5 \strokec5  \cf4 \strokec4 type\cf6 \strokec6 =\cf7 \strokec7 "submit"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-900 hover:bg-blue-800 transition duration-300"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                 Send Message\cb1 \
-\cb3                                 \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-paper-plane ml-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 </\cf2 \strokec2 button\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 form\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cb1 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "md:w-1/2"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-white p-8 rounded-lg h-full shadow-sm border border-gray-100"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl font-semibold text-gray-900 mb-6"\cf6 \strokec6 >\cf5 \strokec5 Connect With Me\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cb1 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "space-y-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex items-start"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex-shrink-0 bg-blue-100 rounded-full p-3"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                     \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-envelope text-blue-900 text-xl"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "ml-4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                     \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-lg font-medium text-gray-900"\cf6 \strokec6 >\cf5 \strokec5 Email\cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-600"\cf6 \strokec6 >\cf5 \strokec5 contact@saberdhib.com\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cb1 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex items-start"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex-shrink-0 bg-blue-100 rounded-full p-3"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                     \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-file-alt text-blue-900 text-xl"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "ml-4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                     \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-lg font-medium text-gray-900"\cf6 \strokec6 >\cf5 \strokec5 CV\cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-blue-900 hover:underline flex items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                         Download my CV\cb1 \
-\cb3                                         \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-download ml-2"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                     \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cb1 \
-\cb3                             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex items-start"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex-shrink-0 bg-blue-100 rounded-full p-3"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                     \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fas fa-globe text-blue-900 text-xl"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "ml-4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                     \cf6 \strokec6 <\cf2 \strokec2 h4\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-lg font-medium text-gray-900"\cf6 \strokec6 >\cf5 \strokec5 Social Media\cf6 \strokec6 </\cf2 \strokec2 h4\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex space-x-4 mt-2"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                         \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700 hover:text-blue-900 transition duration-300"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-linkedin-in text-2xl"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                         \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                         \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700 hover:text-blue-900 transition duration-300"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-github text-2xl"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                         \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                         \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-700 hover:text-blue-900 transition duration-300"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                             \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-twitter text-2xl"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                         \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3     \cf10 \strokec10 <!-- Footer -->\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 footer\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-gray-100 text-gray-700 py-12 border-t border-gray-200"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex flex-col md:flex-row justify-between items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mb-6 md:mb-0 flex items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://via.placeholder.com/40/1e3a8a/FFFFFF?text=SD"\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "Logo"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "h-8 w-8 rounded-full mr-3"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl font-bold"\cf6 \strokec6 >\cf5 \strokec5 Saber Dhib\cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-500 mt-1"\cf6 \strokec6 >\cf5 \strokec5 Data & AI Project Engineer\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cb1 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex space-x-6 mb-6 md:mb-0"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-500 hover:text-blue-900 transition duration-300"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-linkedin-in text-xl"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-500 hover:text-blue-900 transition duration-300"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-github text-xl"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-500 hover:text-blue-900 transition duration-300"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                         \cf6 \strokec6 <\cf2 \strokec2 i\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fab fa-twitter text-xl"\cf6 \strokec6 ></\cf2 \strokec2 i\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cb1 \
-\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "border-t border-gray-200 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-500 text-sm mb-4 md:mb-0"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \'a9 2025 Saber Dhib \'96 All rights reserved.\cb1 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex space-x-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-500 hover:text-blue-900 text-sm transition duration-300"\cf6 \strokec6 >\cf5 \strokec5 Legal Notice\cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-500 hover:text-blue-900 text-sm transition duration-300"\cf6 \strokec6 >\cf5 \strokec5 Privacy Policy\cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                     \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-gray-500 hover:text-blue-900 text-sm transition duration-300"\cf6 \strokec6 >\cf5 \strokec5 Terms of Service\cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 footer\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\
-\cb3     \cf6 \strokec6 <\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cb3         \cf10 \strokec10 // Mobile menu toggle\cf5 \cb1 \strokec5 \
-\cb3         document\cf8 \strokec8 .\cf5 \strokec5 getElementById\cf8 \strokec8 (\cf7 \strokec7 'menu-btn'\cf8 \strokec8 ).\cf5 \strokec5 addEventListener\cf8 \strokec8 (\cf7 \strokec7 'click'\cf8 \strokec8 ,\cf5 \strokec5  \cf2 \strokec2 function\cf8 \strokec8 ()\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf2 \strokec2 const\cf5 \strokec5  menu \cf8 \strokec8 =\cf5 \strokec5  document\cf8 \strokec8 .\cf5 \strokec5 getElementById\cf8 \strokec8 (\cf7 \strokec7 'mobile-menu'\cf8 \strokec8 );\cf5 \cb1 \strokec5 \
-\cb3             menu\cf8 \strokec8 .\cf5 \strokec5 classList\cf8 \strokec8 .\cf5 \strokec5 toggle\cf8 \strokec8 (\cf7 \strokec7 'hidden'\cf8 \strokec8 );\cf5 \cb1 \strokec5 \
-\cb3         \cf8 \strokec8 \});\cf5 \cb1 \strokec5 \
-\
-\cb3         \cf10 \strokec10 // Smooth scrolling for anchor links\cf5 \cb1 \strokec5 \
-\cb3         document\cf8 \strokec8 .\cf5 \strokec5 querySelectorAll\cf8 \strokec8 (\cf7 \strokec7 'a[href^="#"]'\cf8 \strokec8 ).\cf5 \strokec5 forEach\cf8 \strokec8 (\cf5 \strokec5 anchor \cf8 \strokec8 =>\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3             anchor\cf8 \strokec8 .\cf5 \strokec5 addEventListener\cf8 \strokec8 (\cf7 \strokec7 'click'\cf8 \strokec8 ,\cf5 \strokec5  \cf2 \strokec2 function\cf5 \strokec5  \cf8 \strokec8 (\cf5 \strokec5 e\cf8 \strokec8 )\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                 e\cf8 \strokec8 .\cf5 \strokec5 preventDefault\cf8 \strokec8 ();\cf5 \cb1 \strokec5 \
-\cb3                 \cb1 \
-\cb3                 \cf2 \strokec2 const\cf5 \strokec5  targetId \cf8 \strokec8 =\cf5 \strokec5  \cf2 \strokec2 this\cf8 \strokec8 .\cf5 \strokec5 getAttribute\cf8 \strokec8 (\cf7 \strokec7 'href'\cf8 \strokec8 );\cf5 \cb1 \strokec5 \
-\cb3                 \cf2 \strokec2 const\cf5 \strokec5  targetElement \cf8 \strokec8 =\cf5 \strokec5  document\cf8 \strokec8 .\cf5 \strokec5 querySelector\cf8 \strokec8 (\cf5 \strokec5 targetId\cf8 \strokec8 );\cf5 \cb1 \strokec5 \
-\cb3                 \cb1 \
-\cb3                 \cf2 \strokec2 if\cf5 \strokec5  \cf8 \strokec8 (\cf5 \strokec5 targetElement\cf8 \strokec8 )\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                     \cf10 \strokec10 // Close mobile menu if open\cf5 \cb1 \strokec5 \
-\cb3                     \cf2 \strokec2 const\cf5 \strokec5  mobileMenu \cf8 \strokec8 =\cf5 \strokec5  document\cf8 \strokec8 .\cf5 \strokec5 getElementById\cf8 \strokec8 (\cf7 \strokec7 'mobile-menu'\cf8 \strokec8 );\cf5 \cb1 \strokec5 \
-\cb3                     mobileMenu\cf8 \strokec8 .\cf5 \strokec5 classList\cf8 \strokec8 .\cf5 \strokec5 add\cf8 \strokec8 (\cf7 \strokec7 'hidden'\cf8 \strokec8 );\cf5 \cb1 \strokec5 \
-\cb3                     \cb1 \
-\cb3                     \cf10 \strokec10 // Scroll to target\cf5 \cb1 \strokec5 \
-\cb3                     window\cf8 \strokec8 .\cf5 \strokec5 scrollTo\cf8 \strokec8 (\{\cf5 \cb1 \strokec5 \
-\cb3                         top\cf8 \strokec8 :\cf5 \strokec5  targetElement\cf8 \strokec8 .\cf5 \strokec5 offsetTop \cf8 \strokec8 -\cf5 \strokec5  \cf9 \strokec9 80\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
-\cb3                         behavior\cf8 \strokec8 :\cf5 \strokec5  \cf7 \strokec7 'smooth'\cf5 \cb1 \strokec5 \
-\cb3                     \cf8 \strokec8 \});\cf5 \cb1 \strokec5 \
-\cb3                 \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3             \cf8 \strokec8 \});\cf5 \cb1 \strokec5 \
-\cb3         \cf8 \strokec8 \});\cf5 \cb1 \strokec5 \
-\
-\cb3         \cf10 \strokec10 // Add shadow to navbar on scroll\cf5 \cb1 \strokec5 \
-\cb3         window\cf8 \strokec8 .\cf5 \strokec5 addEventListener\cf8 \strokec8 (\cf7 \strokec7 'scroll'\cf8 \strokec8 ,\cf5 \strokec5  \cf2 \strokec2 function\cf8 \strokec8 ()\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3             \cf2 \strokec2 const\cf5 \strokec5  nav \cf8 \strokec8 =\cf5 \strokec5  document\cf8 \strokec8 .\cf5 \strokec5 querySelector\cf8 \strokec8 (\cf7 \strokec7 'nav'\cf8 \strokec8 );\cf5 \cb1 \strokec5 \
-\cb3             \cf2 \strokec2 if\cf5 \strokec5  \cf8 \strokec8 (\cf5 \strokec5 window\cf8 \strokec8 .\cf5 \strokec5 scrollY \cf8 \strokec8 >\cf5 \strokec5  \cf9 \strokec9 10\cf8 \strokec8 )\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                 nav\cf8 \strokec8 .\cf5 \strokec5 classList\cf8 \strokec8 .\cf5 \strokec5 add\cf8 \strokec8 (\cf7 \strokec7 'shadow-md'\cf8 \strokec8 );\cf5 \cb1 \strokec5 \
-\cb3             \cf8 \strokec8 \}\cf5 \strokec5  \cf2 \strokec2 else\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
-\cb3                 nav\cf8 \strokec8 .\cf5 \strokec5 classList\cf8 \strokec8 .\cf5 \strokec5 remove\cf8 \strokec8 (\cf7 \strokec7 'shadow-md'\cf8 \strokec8 );\cf5 \cb1 \strokec5 \
-\cb3             \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
-\cb3         \cf8 \strokec8 \});\cf5 \cb1 \strokec5 \
-\cb3     \cf6 \strokec6 </\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\pard\pardeftab720\partightenfactor0
-\cf6 \cb3 \strokec6 </\cf2 \strokec2 body\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-\cf6 \cb3 \strokec6 </\cf2 \strokec2 html\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
-}
+    <!-- Navigation -->
+    <nav class="sticky-nav shadow-sm border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex items-center">
+                        <img src="https://via.placeholder.com/40/1e3a8a/FFFFFF?text=SD" alt="Logo" class="h-8 w-8 rounded-full mr-2">
+                        <span class="text-xl font-semibold text-gray-900">Saber Dhib</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-blue-900">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-blue-900">About</a>
+                    <a href="#documentation" class="nav-link text-gray-700 hover:text-blue-900">Documentation</a>
+                    <a href="#sharing" class="nav-link text-gray-700 hover:text-blue-900">Sharing</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-blue-900">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-900 hover:bg-gray-50">Home</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-900 hover:bg-gray-50">About</a>
+                <a href="#documentation" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-900 hover:bg-gray-50">Documentation</a>
+                <a href="#sharing" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-900 hover:bg-gray-50">Sharing</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-900 hover:bg-gray-50">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="bg-white py-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Saber Dhib</h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold gradient-text mb-6">
+                        From math to meaning – data with a purpose.
+                    </h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        I apply math, data and AI to turn ideas into concrete, value-driven strategies.
+                    </p>
+                    <div>
+                        <a href="#contact" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-900 hover:bg-blue-800 transition duration-300">
+                            Contact Me
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="w-64 h-64 rounded-full bg-gradient-to-br from-blue-900 to-blue-600 shadow-lg overflow-hidden border-4 border-white gallery-item">
+                        <!-- Profile image -->
+                        <img src="0" alt="Saber " class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">About Me</h2>
+                <div class="w-20 h-1 bg-blue-900 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <p class="text-lg text-gray-700 mb-6">
+                        Data project engineer with a dual background in applied mathematics and economics. My international experience spans Tunisia and the MENA region, interested on  retail, luxury, fashion, sport, health, tech and supply chain sectors.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-6">
+                        I specialize in applying data science and business analyst  to create tangible business value, whether through automation, predictive analytics, or strategic insights.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Fluent in French, English, and Arabic, I bridge technical expertise with cross-cultural communication to deliver impactful solutions.
+                    </p>
+                    
+                    <div class="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-brain text-blue-900 mr-2"></i>
+                            <span class="text-gray-700">AI Engineering</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-shopping-bag text-blue-900 mr-2"></i>
+                            <span class="text-gray-700">Retail  </span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-gem text-blue-900 mr-2"></i>
+                            <span class="text-gray-700">Luxury</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-tshirt text-blue-900 mr-2"></i>
+                            <span class="text-gray-700">Learning</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-boxes text-blue-900 mr-2"></i>
+                            <span class="text-gray-700">Supply Chain</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-language text-blue-900 mr-2"></i>
+                            <span class="text-gray-700">Conseil </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-12 flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=600&q=80" alt="Teamwork" class="rounded-xl shadow-lg gallery-item max-h-96">
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="tools" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-extrabold text-gray-900 mb-4">
+      <span class="inline-block bg-gradient-to-r from-blue-900 to-blue-500 text-transparent bg-clip-text">
+        Tech Stack & Tools
+      </span>
+    </h2>
+    <p class="text-lg text-gray-600 mb-12">
+      Tools I use to build, automate, deploy, and analyze data & AI solutions.
+    </p>
+
+    <!-- Dev & Data Tools -->
+    <div class="mb-10">
+      <h3 class="text-xl font-semibold text-blue-800 mb-4">Dev & Data Engineering</h3>
+      <div class="flex flex-wrap justify-center gap-4">
+        <span class="tool-badge"><i class="fab fa-python mr-2"></i>Python</span>
+        <span class="tool-badge"><i class="fas fa-database mr-2"></i>BigQuery</span>
+        <span class="tool-badge"><i class="fas fa-server mr-2"></i>SQL Server</span>
+        <span class="tool-badge"><i class="fas fa-terminal mr-2"></i>Terminal</span>
+        <span class="tool-badge"><i class="fas fa-code mr-2"></i>Notebook</span>
+        <span class="tool-badge"><i class="fas fa-cloud mr-2"></i>GCP</span>
+        <span class="tool-badge"><i class="fas fa-chart-line mr-2"></i>Power BI</span>
+      </div>
+    </div>
+
+    <!-- Automation Tools -->
+    <div class="mb-10">
+      <h3 class="text-xl font-semibold text-blue-800 mb-4">Automation & No-Code</h3>
+      <div class="flex flex-wrap justify-center gap-4">
+        <span class="tool-badge"><i class="fas fa-bolt mr-2"></i>Make</span>
+        <span class="tool-badge"><i class="fas fa-plug mr-2"></i>Zapier</span>
+        <span class="tool-badge"><i class="fas fa-cogs mr-2"></i>n8n</span>
+      </div>
+    </div>
+
+    <!-- Productivity / Misc -->
+    <div class="mb-10">
+      <h3 class="text-xl font-semibold text-blue-800 mb-4">Productivity & Analysis</h3>
+      <div class="flex flex-wrap justify-center gap-4">
+        <span class="tool-badge"><i class="fas fa-file-excel mr-2"></i>Excel</span>
+        <span class="tool-badge"><i class="fas fa-table mr-2"></i>Google Sheets</span>
+        <span class="tool-badge"><i class="fas fa-chart-bar mr-2"></i>RStudio</span>
+        <span class="tool-badge"><i class="fas fa-robot mr-2"></i>Mistral</span>
+        <span class="tool-badge"><i class="fas fa-comment-dots mr-2"></i>ChatGPT</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom style for tags -->
+  <style>
+    .tool-badge {
+      display: inline-flex;
+      align-items: center;
+      background-color: #e0e7ff;
+      color: #1e3a8a;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      transition: transform 0.2s ease;
+    }
+    .tool-badge:hover {
+      transform: scale(1.05);
+      box-shadow: 0 2px 8px rgba(30, 58, 138, 0.2);
+    }
+  </style>
+</section>
+
+
+    <!-- Documentation Section -->
+    <section id="documentation" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">Documentation</h2>
+                <div class="w-20 h-1 bg-blue-900 mx-auto mt-4"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mt-6">
+                    Selected projects applying data science and AI to real-world challenges
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="dashboard-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <div class="h-48 bg-gradient-to-r from-blue-900 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-calendar-check text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">GL Events</h3>
+                        <p class="text-gray-600 mb-4">Data Cloud & Dashboards</p>
+                        <p class="text-gray-700 mb-4">
+                            Developed comprehensive data solutions and interactive dashboards to enhance event experience and operational efficiency.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Data Cloud</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Dashboarding</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Event Tech</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="dashboard-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <div class="h-48 bg-gradient-to-r from-blue-900 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-store text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Baraka Cobra</h3>
+                        <p class="text-gray-600 mb-4">Retail</p>
+                        <p class="text-gray-700 mb-4">
+                            Built and scaled a local grocery store from the ground up. Hands-on experience managing inventory, pricing, suppliers, and daily operations – a true school of real-world business.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Retail Ops</span>
+            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Inventory</span>
+            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Strategy</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="dashboard-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <div class="h-48 bg-gradient-to-r from-blue-900 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-industry text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Textile Tech</h3>
+                        <p class="text-gray-600 mb-4">Fashion & Data</p>
+                        <p class="text-gray-700 mb-4">
+                              Created a fashion-focused data business concept. Used market analysis and business modeling to explore how AI and data could optimize design, supply chain, and demand forecasting in the textile industry.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Business analysis</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Fashion </span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Supply Chain</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sharing Knowledge Section -->
+    <section id="sharing" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">Sharing Knowledge</h2>
+                <div class="w-20 h-1 bg-blue-900 mx-auto mt-4"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mt-6">
+                    I regularly share thoughts on AI, business, and data applied to fashion, retail and luxury. Not to show off – just for the pleasure of learning out loud.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="dashboard-card bg-white rounded-xl p-8 text-center border border-gray-100">
+                    <i class="fas fa-newspaper text-5xl text-blue-900 mb-6"></i>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Articles</h3>
+                    <p class="text-gray-600 mb-6">
+                        Insights on AI applications in retail, luxury, and supply chain management.
+                    </p>
+                    <div class="bg-gray-100 rounded-lg p-4">
+                        <p class="text-gray-500 italic">Coming soon - currently in development</p>
+                    </div>
+                </div>
+                
+                <div class="dashboard-card bg-white rounded-xl p-8 text-center border border-gray-100">
+                    <i class="fas fa-chalkboard-teacher text-5xl text-blue-900 mb-6"></i>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Presentations</h3>
+                    <p class="text-gray-600 mb-6">
+                        Talks and workshops on data-driven decision making in various industries.
+                    </p>
+                    <div class="bg-gray-100 rounded-lg p-4">
+                        <p class="text-gray-500 italic">Coming soon - currently in development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">Gallery</h2>
+                <div class="w-20 h-1 bg-blue-900 mx-auto mt-4"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mt-6">
+                    Moments from professional journey and collaborations
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="gallery-item rounded-xl overflow-hidden shadow-lg">
+                    <img src="https://images.unspl69-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=400&q=80" alt="Portrait" class="w-full h-64 object-cover">
+                    <div class="bg-white p-4">
+                        <p class="text-gray-700 text-center">Professional Headshot</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item rounded-xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d0by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=400&q=80" alt="Team" class="w-full h-64 object-cover">
+                    <div class="bg-white p-4">
+                        <p class="text-gray-700 text-center">Team Collaboration</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item rounded-xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1551288049-%3D%3D&auto=format&fit=crop&w=400&h=400&q=80" alt="Work" class="w-full h-64 object-cover">
+                    <div class="bg-white p-4">
+                        <p class="text-gray-700 text-center">In Action</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">Contact</h2>
+                <div class="w-20 h-1 bg-blue-900 mx-auto mt-4"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mt-6">
+                    Interested in collaboration or just want to chat? Don't hesitate to reach out.
+                </p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-900 focus:border-blue-900">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-900 focus:border-blue-900">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-900 focus:border-blue-900"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-900 hover:bg-blue-800 transition duration-300">
+                                Send Message
+                                <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-white p-8 rounded-lg h-full shadow-sm border border-gray-100">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-6">Connect With Me</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-blue-100 rounded-full p-3">
+                                    <i class="fas fa-envelope text-blue-900 text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-900">Email</h4>
+                                    <p class="text-gray-600">contact@saberdhib.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-blue-100 rounded-full p-3">
+                                    <i class="fas fa-file-alt text-blue-900 text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-900">CV</h4>
+                                    <a href="#" class="text-blue-900 hover:underline flex items-center">
+                                        Download my CV
+                                        <i class="fas fa-download ml-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-blue-100 rounded-full p-3">
+                                    <i class="fas fa-globe text-blue-900 text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-900">Social Media</h4>
+                                    <div class="flex space-x-4 mt-2">
+                                        <a href="#" class="text-gray-700 hover:text-blue-900 transition duration-300">
+                                            <i class="fab fa-linkedin-in text-2xl"></i>
+                                        </a>
+                                        <a href="#" class="text-gray-700 hover:text-blue-900 transition duration-300">
+                                            <i class="fab fa-github text-2xl"></i>
+                                        </a>
+                                        <a href="#" class="text-gray-700 hover:text-blue-900 transition duration-300">
+                                            <i class="fab fa-twitter text-2xl"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-gray-700 py-12 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0 flex items-center">
+                    <img src="https://via.placeholder.com/40/1e3a8a/FFFFFF?text=SD" alt="Logo" class="h-8 w-8 rounded-full mr-3">
+                    <div>
+                        <h2 class="text-xl font-bold">Saber Dhib</h2>
+                        <p class="text-gray-500 mt-1">Data & AI Project Engineer</p>
+                    </div>
+                </div>
+                
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="#" class="text-gray-500 hover:text-blue-900 transition duration-300">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-blue-900 transition duration-300">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-blue-900 transition duration-300">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-200 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                    © 2025 Saber Dhib – All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-blue-900 text-sm transition duration-300">Legal Notice</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-900 text-sm transition duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-900 text-sm transition duration-300">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    mobileMenu.classList.add('hidden');
+                    
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add shadow to navbar on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-md');
+            } else {
+                nav.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body>
+</html>

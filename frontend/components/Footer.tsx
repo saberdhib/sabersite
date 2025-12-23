@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="w-full border-t mt-24 px-8 py-8 text-sm opacity-80">
+    <footer className="w-full border-t border-border mt-24 px-8 py-8 text-sm text-muted">
       <div className="flex justify-between items-center">
         <p>© {new Date().getFullYear()} Saber Dhib</p>
         <div className="flex gap-4">
@@ -13,4 +13,3 @@ export default function Footer() {
     </footer>
   );
 }
-

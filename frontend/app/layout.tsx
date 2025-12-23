@@ -1,4 +1,7 @@
 import "./globals.css";
+import Navbar from "../components/Navbar";
+import { ThemeProvider } from "../components/ThemeProvider";
+import Footer from "../components/Footer";
 
 export const metadata = {
   title: "Saber Dhib — AI & Data Solution Architect",
@@ -12,8 +15,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body>
+        <ThemeProvider>
+          <Navbar />
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
+  <ThemeProvider>
+  <Navbar />
+  {children}
+  <Footer />
+</ThemeProvider>
 }

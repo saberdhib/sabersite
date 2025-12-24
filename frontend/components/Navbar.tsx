@@ -1,63 +1,63 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
-import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import { useLanguage } from "./LanguageProvider";
+import ThemeSwitch from "./ThemeSwitch";
+import ChatButton from "./ChatButton";
 
 export default function Navbar() {
-  const { resolvedTheme, setTheme } = useTheme();
+  const { language, setLanguage, t } = useLanguage();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
   if (!mounted) return null;
-  const isDark = resolvedTheme === "dark";
+  const isEnglish = language === "en";
 
   return (
     <nav className="w-full flex items-center justify-between px-8 py-4 border-b border-border bg-background">
-      <Link href="/" className="font-bold text-lg tracking-tight">
+      <Link href="/" className="flex items-center gap-3 font-bold text-lg tracking-tight">
+        <Image
+          src="/media/saberDhib.jpg"
+          alt="Saber Dhib"
+          width={28}
+          height={28}
+          className="h-7 w-7 rounded-full object-cover"
+          priority
+        />
         Saber Dhib
       </Link>
 
       <div className="flex items-center gap-6">
-        <Link href="/about">About</Link>
-        <Link href="/services">Services</Link>
-        <Link href="/projects">Projects</Link>
-        <Link href="/architectures">Architectures</Link>
+        <Link href="/about">{t.nav.about}</Link>
+        <Link href="/services">{t.nav.services}</Link>
+        <Link href="/projects">{t.nav.projects}</Link>
+        <Link href="/architectures">{t.nav.architectures}</Link>
+        <Link href="/knowledge">{t.nav.knowledge}</Link>
+        <Link href="/events">{t.nav.events}</Link>
+        <Link href="/social">{t.nav.social}</Link>
+        <Link href="/contact">{t.nav.contact}</Link>
+
+        <ThemeSwitch />
 
         <button
           type="button"
-          onClick={() => setTheme(isDark ? "light" : "dark")}
-          className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-foreground transition hover:bg-[color:var(--surface)]"
-          aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
-          title={isDark ? "Switch to light mode" : "Switch to dark mode"}
+          onClick={() => setLanguage(isEnglish ? "fr" : "en")}
+          className="inline-flex h-9 items-center gap-1 rounded-full border border-border px-3 text-xs font-semibold uppercase tracking-[0.2em] text-foreground transition hover:bg-[color:var(--surface)]"
+          aria-label={isEnglish ? "Switch to French" : "Switch to English"}
+          title={isEnglish ? "Switch to French" : "Switch to English"}
         >
-          {isDark ? (
-            <svg
-              aria-hidden="true"
-              viewBox="0 0 24 24"
-              className="h-5 w-5"
-              fill="currentColor"
-            >
-              <path d="M21 14.5A8.5 8.5 0 0 1 9.5 3a1 1 0 0 0-1.08 1.42A6.5 6.5 0 1 0 20.58 15.6 1 1 0 0 0 21 14.5z" />
-            </svg>
-          ) : (
-            <svg
-              aria-hidden="true"
-              viewBox="0 0 24 24"
-              className="h-5 w-5"
-              fill="currentColor"
-            >
-              <path d="M12 4a1 1 0 0 1 1 1v1.25a1 1 0 1 1-2 0V5a1 1 0 0 1 1-1zm0 12.75a1 1 0 0 1 1 1V19a1 1 0 1 1-2 0v-1.25a1 1 0 0 1 1-1zM6.1 6.1a1 1 0 0 1 1.4 0l.9.9a1 1 0 1 1-1.4 1.4l-.9-.9a1 1 0 0 1 0-1.4zm8.5 8.5a1 1 0 0 1 1.4 0l.9.9a1 1 0 1 1-1.4 1.4l-.9-.9a1 1 0 0 1 0-1.4zM4 12a1 1 0 0 1 1-1h1.25a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1zm12.75-1a1 1 0 1 1 0 2H18a1 1 0 1 1 0-2h-1.25zM6.1 17.9a1 1 0 0 1 1.4-1.4l.9.9a1 1 0 1 1-1.4 1.4l-.9-.9zm8.5-8.5a1 1 0 0 1 1.4-1.4l.9.9a1 1 0 1 1-1.4 1.4l-.9-.9zM12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8z" />
-            </svg>
-          )}
+          <span className={isEnglish ? "text-foreground" : "text-muted"}>
+            EN
+          </span>
+          <span className="text-muted">/</span>
+          <span className={!isEnglish ? "text-foreground" : "text-muted"}>
+            FR
+          </span>
         </button>
 
-        <Link
-          href="/chat"
-          className="rounded-md px-4 py-2 border border-border bg-[color:var(--surface)] font-semibold text-foreground transition hover:border-[color:var(--accent)] hover:text-[color:var(--accent)]"
-        >
-          Discutons
-        </Link>
+        <ChatButton />
       </div>
     </nav>
   );

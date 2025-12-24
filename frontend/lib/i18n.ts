@@ -26,6 +26,9 @@ export const translations = {
       placeholder:
         "Ask about architecture decisions, RAG systems, or recent projects...",
       button: "Start chat",
+      toggleLabel: "Use my knowledge base",
+      sending: "Searching sources...",
+      sources: "Sources",
     },
     home: {
       eyebrow: "AI Solution Architect",
@@ -640,8 +643,19 @@ export const translations = {
     privacy: {
       title: "Privacy & AI Ethics",
       intro:
-        "A brief overview of privacy principles and responsible AI practices will be published here.",
-      comingSoon: "Content coming soon.",
+        "Saber Dhib designs this site to minimize data collection and avoid tracking-heavy practices. The intent is to keep the experience focused on content and professional exchange.",
+      sections: {
+        principles:
+          "Any information shared through contact or chat is used only to respond to the request and improve clarity of future interactions.",
+        aiUse:
+          "AI features on this site, including RAG, are designed to be grounded in explicit sources. The system is instructed to avoid hallucinations and to say “I don’t know based on my sources” when reliable information is missing.",
+        knowledgeBase:
+          "Answers are generated from curated, explicit content stored in the site’s knowledge base. The system does not invent facts or rely on hidden sources.",
+        responsible:
+          "Saber Dhib prioritizes transparency, source traceability, and governance in AI system design. Human oversight remains essential for decisions with business, operational, or ethical impact.",
+        future:
+          "This page will evolve as the site gains new features and capabilities. Any significant change in how AI is used or how data is handled will be reflected here.",
+      },
     },
   },
   fr: {
@@ -669,6 +683,9 @@ export const translations = {
       placeholder:
         "Posez une question sur l'architecture, le RAG ou les projets...",
       button: "Demarrer le chat",
+      toggleLabel: "Utiliser ma base de connaissances",
+      sending: "Recherche en cours...",
+      sources: "Sources",
     },
     home: {
       eyebrow: "Architecte Solution IA",
@@ -1294,8 +1311,19 @@ export const translations = {
     privacy: {
       title: "Confidentialite & ethique IA",
       intro:
-        "Un bref apercu des principes de confidentialite et d’ethique IA sera publie ici.",
-      comingSoon: "Contenu bientot disponible.",
+        "Saber Dhib conçoit ce site pour minimiser la collecte de données et éviter les pratiques de suivi intrusives. L’objectif est de rester centré sur le contenu et les échanges professionnels.",
+      sections: {
+        principles:
+          "Toute information partagée via le contact ou le chat sert uniquement à répondre à la demande et à améliorer la clarté des échanges.",
+        aiUse:
+          "Les fonctionnalités IA, dont le RAG, s’appuient sur des sources explicites. Le système évite les hallucinations et indique “I don’t know based on my sources” lorsque l’information manque.",
+        knowledgeBase:
+          "Les réponses sont générées à partir d’un contenu curé et explicite. Le système n’invente pas de faits et ne s’appuie pas sur des sources cachées.",
+        responsible:
+          "Saber Dhib privilégie la transparence, la traçabilité des sources et la gouvernance. La supervision humaine reste essentielle pour les décisions à impact.",
+        future:
+          "Cette page évoluera avec les fonctionnalités du site. Tout changement significatif sur l’usage de l’IA ou la gestion des données y sera reflété.",
+      },
     },
   },
 } as const;

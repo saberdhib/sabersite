@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --background: #f4f6fb;
+  --foreground: #12151b;
+  --surface: #ffffff;
+  --muted: #5f6b7a;
+  --border: #d6dce6;
+  --accent: #2b5fd9;
+  --accent-strong: #1f4bb8;
+  --accent-foreground: #f5f7ff;
+}
+
+.dark {
+  color-scheme: dark;
+  --background: #11151b;
+  --foreground: #e6ebf2;
+  --surface: #171c23;
+  --muted: #9aa4b2;
+  --border: #2a313c;
+  --accent: #4c73ff;
+  --accent-strong: #2f54c7;
+  --accent-foreground: #0b1117;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-strong: var(--accent-strong);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.glow-surface {
+  position: absolute;
+  inset: -20% -10% auto -10%;
+  height: 70%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.55;
+  filter: blur(80px);
+  background:
+    radial-gradient(
+      40% 60% at 30% 30%,
+      rgba(43, 95, 217, 0.22),
+      rgba(43, 95, 217, 0)
+    ),
+    radial-gradient(
+      50% 70% at 70% 20%,
+      rgba(43, 95, 217, 0.18),
+      rgba(43, 95, 217, 0)
+    );
+  animation: glow-drift 18s ease-in-out infinite alternate;
+}
+
+.dark .glow-surface {
+  opacity: 0.7;
+}
+
+@keyframes glow-drift {
+  0% {
+    transform: translate3d(-2%, -1%, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(2%, 1%, 0) scale(1.02);
+  }
+  100% {
+    transform: translate3d(-1%, 2%, 0) scale(1.01);
+  }
+}
+
+.marquee {
+  position: relative;
+  overflow: hidden;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface) 88%, var(--accent) 12%);
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+  gap: 2.5rem;
+  padding: 0.9rem 0;
+  animation: marquee-slide 26s linear infinite;
+}
+
+.marquee__item {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+@keyframes marquee-slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,59 @@
+.switch {
+  --track-width: 52px;
+  --track-height: 28px;
+  --thumb-size: 22px;
+  --thumb-offset: 3px;
+  --track-radius: 999px;
+  --transition: 200ms ease;
+}
+
+.control {
+  position: relative;
+  display: inline-block;
+  width: var(--track-width);
+  height: var(--track-height);
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.track {
+  position: absolute;
+  inset: 0;
+  background: var(--surface);
+  border-radius: var(--track-radius);
+  transition: var(--transition);
+  border: 1px solid var(--border);
+}
+
+.thumb {
+  position: absolute;
+  top: var(--thumb-offset);
+  left: var(--thumb-offset);
+  width: var(--thumb-size);
+  height: var(--thumb-size);
+  background: var(--background);
+  border-radius: 999px;
+  transition: var(--transition);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  border: 1px solid var(--border);
+}
+
+.checkbox:checked + .track {
+  background: var(--accent);
+}
+
+.checkbox:checked + .track .thumb {
+  transform: translateX(
+    calc(var(--track-width) - var(--thumb-size) - (var(--thumb-offset) * 2))
+  );
+}
+
+.checkbox:focus-visible + .track {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
